@@ -12,27 +12,27 @@ const Block = () => {
   }
   // -------------------
   const [uppercase, setUppercase] = useState(false)
-  function uppercaseValue(e:any) {
+  function uppercaseValue() {
     uppercase==false ? setUppercase(true) : setUppercase(false);
     SetPasswordParameter()
   }
   // -------------------
   const [special, setSpecial] = useState(true)
-  function specialValue(e:any) {
+  function specialValue() {
     special==false ? setSpecial(true) : setSpecial(false);
     SetPasswordParameter()
   }
   // -------------------
   const [number, setNumber] = useState(true)
-  function numberValue(e:any) {
+  function numberValue() {
     number==false ? setNumber(true) : setNumber(false);
   }
   // -----------------------------------------------------------------------
   const [password, setPassword] = useState("PASSWORD")
-  const [randomStringLow,setRandomStringLow] = useState("abcdefghijklmnopqrstuvwxyz")
-  const [randomStringUpper,setRandomStringUpper] = useState("abcdefghijklmnopqrstuvwxyz".toUpperCase())
-  const [randomStringSpecial,setRandomStringSpecial] = useState("+-.,/*?!%#@")
-  const [randomStrinNumber,setRandomStrinNumber] = useState("0123456789")
+  const randomStringLow = "abcdefghijklmnopqrstuvwxyz"
+  const randomStringUpper = "abcdefghijklmnopqrstuvwxyz".toUpperCase()
+  const randomStringSpecial = "+-.,/*?!%#@"
+  const randomStrinNumber = "0123456789"
   const [randomString,setRandomString] = useState("")
 
   function SetPasswordParameter() {
